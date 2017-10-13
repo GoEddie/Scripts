@@ -1,4 +1,4 @@
-if not exits(select * from sys.databases where name = 'hr')
+if not exists(select * from sys.databases where name = 'hr')
 begin
 	create database hr;
 end
